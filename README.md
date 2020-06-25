@@ -11,3 +11,9 @@
 ## Templates
 
 - Sword Fighting Game Template (By phoenix)
+-----
+
+#### Top Contributors
+
++ Phoenix
++ SmartLion
