@@ -24,4 +24,4 @@
 # Ranking:
 1. Phoenix (3 Contributions)
 2. ggnoobgamingdeutsch (2 Contributions)
-3. SmartLion (1 Contribution)
+
