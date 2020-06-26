@@ -4,7 +4,7 @@
 #### Javascript Files
 - Guns
   - [Sword Script](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/Weaponry/Sword.js) By SmartLion
-  - [Crimson Blaster]https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/Weaponry/Crimson%20Blaster.js) By SmartLion
+  - [Crimson Blaster](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/Weaponry/Crimson%20Blaster.js) By SmartLion
 
   - [Simple Firegun Script](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/Weaponry/Simple%20Gun.js) by Phoenix
 - General Game
