@@ -12,6 +12,7 @@
   - [Anti Team Kill](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/%5BWIP%5D%20Anti-Team%20Kill.js) By Phoenix
   - [Owner Team](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/OwnerTeam.js) By SmartLion
   - [BBTools](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/BBTools.js) By SmartLion and Cheats (Partial Source code)
+  - [SwitchTeam](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/TeamChangeScript.js) By Rares and ggnoobgaming (Partial help)
 
 
 ## Templates
