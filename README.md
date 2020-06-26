@@ -13,6 +13,9 @@
   - [Owner Team](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/OwnerTeam.js) By SmartLion
   - [BBTools](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/BBTools.js) By SmartLion and Cheats (Partial Source code)
   - [SwitchTeam](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/TeamChangeScript.js) By Rares and ggnoobgaming (Partial help)
+  - [Non Collided Bricks](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/NoCollideBricks.js) By Rares
+  - [Simple Bot Script](https://github.com/Brick-Hill-Developers/Community-Resources/tree/master/General%20Game%20Scripts) by Rares
+
 
 
 ## Templates
@@ -27,5 +30,6 @@
 ---
 # Ranking:
 1. Phoenix (3 Contributions)
+2. rares (3 contribution)
 2. ggnoobgamingdeutsch (3 Contributions)
-3. rares (1 contribution)
+
