@@ -8,6 +8,7 @@
 - General Game
   - [Chat Tags](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/Chat%20Tags.js) By 
   - [Anti Team Kill](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/%5BWIP%5D%20Anti-Team%20Kill.js) By Phoenix
+  - [Owner Team](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/OwnerTeam.js) By SmartLion
 
 
 ## Templates
