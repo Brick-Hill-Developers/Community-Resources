@@ -29,7 +29,7 @@
 
 
 - [Sword Fighting Template](https://github.com/Brick-Hill-Developers/Sword-Fighting-Arena) By Phoenix
-- [Murder Mistery Template](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/Templates/Murder%20Mystery.js) by lykaspars4
+- [Murder Mystery Template](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/Templates/Murder%20Mystery.js) by lykaspars4
 - [Clicker Game Template](https://github.com/Core-commits/Click_Template) by Edge.
 - [R/place Template](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/Templates/Place.js) by lykaspars4
 
