@@ -18,7 +18,7 @@
   - [Day and Night Cycle](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/DayNight%20Cycle.js) by lykaspars4
   - [Anti-Afk](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/Anit-AFK.js) by lykaspars4
   - [Chat to Discord.js](https://github.com/Brick-Hill-Developers/Community-Resources/blob/85e39833b360ceaa7a1327e3a78786f2264e0fbf/General%20Game%20Scripts/Discord.js) by Spotwich
-  - [Reuse Handler.js](https://github.com/Brick-Hill-Developers/Community-Resources/blob/85e39833b360ceaa7a1327e3a78786f2264e0fbf/General%20Game%20Scripts/ReUseHandler.js) by Smart Lion
+  - [reuseHandler](https://github.com/Brick-Hill-Developers/Community-Resources/blob/85e39833b360ceaa7a1327e3a78786f2264e0fbf/General%20Game%20Scripts/ReUseHandler.js) by Smart Lion
   - [Member Features.js](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/memberfeatures.js) by pb2007
  
 
