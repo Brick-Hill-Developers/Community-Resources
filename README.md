@@ -20,7 +20,7 @@
   - [Chat to Discord.js](https://github.com/Brick-Hill-Developers/Community-Resources/blob/85e39833b360ceaa7a1327e3a78786f2264e0fbf/General%20Game%20Scripts/Discord.js) by Spotwich
   - [reuseHandler](https://github.com/Brick-Hill-Developers/Community-Resources/blob/85e39833b360ceaa7a1327e3a78786f2264e0fbf/General%20Game%20Scripts/ReUseHandler.js) by Smart Lion
   - [Member Features.js](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/memberfeatures.js) by pb2007
-  - [Stream (ONLY Node-hill 7.5.9!!!](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/Stream.js) By SmartLion
+  - [Stream (ONLY Node-hill 7.9.5!) ](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/Stream.js) By SmartLion
 
 
 
