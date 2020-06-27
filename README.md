@@ -2,10 +2,9 @@
 # Community Contributions.
 
 #### Javascript Files
-- Guns
+- Weapons
   - [Sword Script](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/Weaponry/Sword.js) By SmartLion
   - [Crimson Blaster](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/Weaponry/Crimson%20Blaster.js) By SmartLion
-
   - [Simple Firegun Script](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/Weaponry/Simple%20Gun.js) by Phoenix
 - General Game
   - [Chat Tags](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/Chat%20Tags.js) By 
@@ -15,12 +14,11 @@
   - [SwitchTeam](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/TeamChangeScript.js) By Rares and ggnoobgaming (Partial help)
   - [Non Collided Bricks](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/NoCollideBricks.js) By Rares
   - [Simple Bot Script](https://github.com/Brick-Hill-Developers/Community-Resources/tree/master/General%20Game%20Scripts) by Rares
-  - [Brick-Reuser](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/ReUseHandler.js) by SmartLion
+  - [Loadbrk](https://github.com/BunnyNabbit/loadbrk/blob/master/loadbrk.js) by SmartLion
   - [Day and Night Cycle](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/DayNight%20Cycle.js) by lykaspars4
   - [Anti-Afk](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/Anit-AFK.js) by lykaspars4
   - [Chat to Discord.js](https://github.com/Brick-Hill-Developers/Community-Resources/blob/85e39833b360ceaa7a1327e3a78786f2264e0fbf/General%20Game%20Scripts/Discord.js) by Spotwhich
   - [Reuse Handler.js](https://github.com/Brick-Hill-Developers/Community-Resources/blob/85e39833b360ceaa7a1327e3a78786f2264e0fbf/General%20Game%20Scripts/ReUseHandler.js) by Smart Lion
-  - [LoadBRK.js](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/LoadBrk.js) by Smart Lion
   - [Member Features.js](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/memberfeatures.js) by pb2007
  
 
