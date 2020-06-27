@@ -15,6 +15,11 @@
   - [SwitchTeam](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/TeamChangeScript.js) By Rares and ggnoobgaming (Partial help)
   - [Non Collided Bricks](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/NoCollideBricks.js) By Rares
   - [Simple Bot Script](https://github.com/Brick-Hill-Developers/Community-Resources/tree/master/General%20Game%20Scripts) by Rares
+  - [Chat to Discord.js](https://github.com/Brick-Hill-Developers/Community-Resources/blob/85e39833b360ceaa7a1327e3a78786f2264e0fbf/General%20Game%20Scripts/Discord.js) by Spotwhich
+  - [Reuse Handler.js](https://github.com/Brick-Hill-Developers/Community-Resources/blob/85e39833b360ceaa7a1327e3a78786f2264e0fbf/General%20Game%20Scripts/ReUseHandler.js) by Smart Lion
+  - [LoadBRK.js](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/LoadBrk.js) by Smart Lion
+  - [Member Features.js](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/memberfeatures.js) by pb2007
+
 
 
 
@@ -26,6 +31,7 @@
 
 ## Tutorials:
 - [Chat Tags Tutorial](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/Chat%20Tags%20Tutorial.md)
+- [Discord.js Tutorial](https://github.com/Brick-Hill-Developers/Community-Resources/blob/85e39833b360ceaa7a1327e3a78786f2264e0fbf/General%20Game%20Scripts/Discord.md) by Spotwhich
 
 ---
 # Ranking:
