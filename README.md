@@ -14,7 +14,7 @@
   - [SwitchTeam](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/TeamChangeScript.js) By Rares and ggnoobgaming (Partial help)
   - [Non Collided Bricks](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/NoCollideBricks.js) By Rares
   - [Simple Bot Script](https://github.com/Brick-Hill-Developers/Community-Resources/tree/master/General%20Game%20Scripts) by Rares
-  - [Loadbrk](https://github.com/BunnyNabbit/loadbrk/blob/master/loadbrk.js) by SmartLion
+  - [Loadbrk](https://github.com/BunnyNabbit/loadbrk/blob/master/loadbrk.js) by SmartLion and pb2007 
   - [Day and Night Cycle](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/DayNight%20Cycle.js) by lykaspars4
   - [Anti-Afk](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/Anit-AFK.js) by lykaspars4
   - [Chat to Discord.js](https://github.com/Brick-Hill-Developers/Community-Resources/blob/85e39833b360ceaa7a1327e3a78786f2264e0fbf/General%20Game%20Scripts/Discord.js) by Spotwich
@@ -38,8 +38,9 @@
 - [Discord.js Tutorial](https://github.com/Brick-Hill-Developers/Community-Resources/blob/85e39833b360ceaa7a1327e3a78786f2264e0fbf/General%20Game%20Scripts/Discord.md) by Spotwich
 
 ---
-# Ranking:
-1. Phoenix (3 Contributions)
-2. rares (3 contribution)
-2. ggnoobgamingdeutsch (3 Contributions)
+# Special thanks to:
+
+- phoenix
+- SmartLion
+- ggnoobgaming
 
