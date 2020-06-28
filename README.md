@@ -31,7 +31,7 @@
   - [Chat Tags](General%20Game%20Scripts/Features/Chat%20Tags.js) by ggnoobgaming
 
 #### Others.
-- [Calendar & Level for RP.](General%20Game%20Scripts/Calendar.js by ggnoobgaming
+- [Calendar & Level for RP.](General%20Game%20Scripts/Calendar.js) by ggnoobgaming
 - [Infinite Jump](General%20Game%20Scripts/InfiniteJump.js) by ggnoobgaming
 
 
