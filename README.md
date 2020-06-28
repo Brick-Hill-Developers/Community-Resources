@@ -1,26 +1,34 @@
 
-# Community Contributions.
 
-#### Javascript Files
-- Weapons
-  - [Sword Script](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/Weaponry/Sword.js) By SmartLion
-  - [Crimson Blaster](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/Weaponry/Crimson%20Blaster.js) By SmartLion
-  - [Simple Firegun Script](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/Weaponry/Simple%20Gun.js) by Phoenix
-- General Game
-  - [Chat Tags](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/Chat%20Tags.js) By ggnoobgaming
-  - [Anti Team Kill](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/%5BWIP%5D%20Anti-Team%20Kill.js) By Phoenix
-  - [Owner Team](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/OwnerTeam.js) By SmartLion
-  - [BBTools](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/BBTools.js) By SmartLion and Cheats (Partial Source code)
-  - [SwitchTeam](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/TeamChangeScript.js) By Rares and ggnoobgaming (Partial help)
-  - [Non Collided Bricks](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/NoCollideBricks.js) By Rares
-  - [Simple Bot Script](https://github.com/Brick-Hill-Developers/Community-Resources/tree/master/General%20Game%20Scripts) by Rares
-  - [Loadbrk](https://github.com/BunnyNabbit/loadbrk/blob/master/loadbrk.js) by SmartLion and pb2007 
-  - [Day and Night Cycle](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/DayNight%20Cycle.js) by lykaspars4
-  - [Anti-Afk](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/Anit-AFK.js) by lykaspars4
-  - [Chat to Discord.js](https://github.com/Brick-Hill-Developers/Community-Resources/blob/85e39833b360ceaa7a1327e3a78786f2264e0fbf/General%20Game%20Scripts/Discord.js) by Spotwich
-  - [reuseHandler](https://github.com/Brick-Hill-Developers/Community-Resources/blob/85e39833b360ceaa7a1327e3a78786f2264e0fbf/General%20Game%20Scripts/ReUseHandler.js) by Smart Lion
-  - [Member Features.js](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/memberfeatures.js) by pb2007
-  - [Brick-Stream (ONLY Node-hill 7.9.5!) ](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/Stream.js) By SmartLion
+# Community Contributions.
+#### Special Scripts:
+- [Artmesis Core](General%20Game%20Scripts/Administration%20Tools/Artmesis%20Core.js) By Lewd
+
+#### Administration Tools:
+- [AntiAFK](General%20Game%20Scripts/Administration%20Tools/AntiAFK.js) by lykaspars4
+-  [Chat to Discord.js](General%20Game%20Scripts/Administration%20Tools/Discord.js) by Spotwich
+- [Owner Team](General%20Game%20Scripts/Administration%20Tools/Discord.js) By SmartLion
+- [BBtools](General%20Game%20Scripts/Administration%20Tools/BBTools.js) By SmartLion and Cheats (Partial Source code)
+-  [SwitchTeam](General%20Game%20Scripts/Administration%20Tools/TeamChangeScript.js) By Rares and ggnoobgaming (Partial help)
+
+
+
+#### Weapons:
+- [Sword](Weaponry/Sword.js) by SmartLion
+- [Simple Firegun](Weaponry/Simple_Gun.js) by Phoenix
+- [Crimson Blaster](Weaponry/CrimsonBlaster.js) By SmartLion
+- [Anti TeamKill Weapon](Weaponry/Anti%20TK%20Gun.js) By Phoenix
+#### Ambient:
+- [Day and Night Cycle](General%20Game%20Scripts/Ambient/DayNight%20Cycle.js)
+#### Game Optimization:
+- [reuseHandler](General%20Game%20Scripts/Optimizations/ReUseHandler.js) by SmartLion
+- [Brick-Stream (ONLY Node-hill 7.9.5!) ](General%20Game%20Scripts/Optimizations/Stream.js) By SmartLion
+- [LoadBrk](https://github.com/BunnyNabbit/loadbrk/blob/master/loadbrk.js) by SmartLion
+
+
+#### Gamepasses & Special Features:
+  - [Member Features.js](General%20Game%20Scripts/Features/Gamepass.js) by pb2007
+  - [Chat Tags](General%20Game%20Scripts/Features/Chat%20Tags.js) by ggnoobgaming
 
 
 
@@ -29,10 +37,10 @@
 
 
 - [Sword Fighting Template](https://github.com/Brick-Hill-Developers/Sword-Fighting-Arena) By Phoenix
-- [Murder Mystery Template](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/Templates/Murder%20Mystery.js) by lykaspars4
+- [Murder Mystery Template (Undocumented)](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/Templates/Murder%20Mystery.js) by lykaspars4
 - [Clicker Game Template](https://github.com/Core-commits/Click_Template) by Edge.
-- [R/place Template](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/Templates/Place.js) by lykaspars4
-
+- [R/place Template (Undocumented)](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/Templates/Place.js) by lykaspars4
+*Undocumented Means it needs to be installed in a special way the developer didnt mention. Once we know how the installation works it will be fully released.
 ## Tutorials:
 - [Chat Tags Tutorial](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/Chat%20Tags%20Tutorial.md) by ggnoobgaming
 - [Discord.js Tutorial](https://github.com/Brick-Hill-Developers/Community-Resources/blob/85e39833b360ceaa7a1327e3a78786f2264e0fbf/General%20Game%20Scripts/Discord.md) by Spotwich
@@ -43,4 +51,4 @@
 - phoenix
 - SmartLion
 - ggnoobgaming
-
+- Lewd

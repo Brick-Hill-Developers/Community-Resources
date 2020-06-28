@@ -5,7 +5,7 @@
 
 
 // Settings \\
-swordDamage = 10 // How much damage does the sword deal when clicked?
+swordDamage = 9.3 // How much damage does the sword deal when clicked?
 swordRange = 8 // How far can the sword hit players?
 swordModelID = 2930 // The mesh of the sword from the store ID
 
