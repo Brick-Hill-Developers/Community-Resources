@@ -30,7 +30,9 @@
   - [Member Features.js](General%20Game%20Scripts/Features/Gamepass.js) by pb2007
   - [Chat Tags](General%20Game%20Scripts/Features/Chat%20Tags.js) by ggnoobgaming
 
-
+#### Others.
+- [Calendar & Level for RP.](General%20Game%20Scripts/Calendar.js by ggnoobgaming
+- [Infinite Jump](General%20Game%20Scripts/InfiniteJump.js) by ggnoobgaming
 
 
 ## Templates
@@ -48,7 +50,16 @@
 ---
 # Special thanks to:
 
-- phoenix
-- SmartLion
-- ggnoobgaming
-- Lewd
+- phoenix (3 Contributions)
+- SmartLion (7 Contributions)
+- ggnoobgaming (5 Contributions + Donations)
+- Lewd (1 Contribution)
+- lykaspars4 (3 Contributions)
+- Spotwich (2 Contributions)
+- Rares (1 Contribution)
+- Cheats (for helpng SmartLion)
+------
+
+## Consider Donating by clicking the "Sponsor" button. (Brick-hill Donation, dont worry!
+:heart:
+
