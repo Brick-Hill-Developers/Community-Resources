@@ -1,5 +1,5 @@
- /* 
-------<=======[ ATERMIS CLAN SYSTEM V1.0 ]=======>------
+/* 
+------<=======[ ATERMIS CLAN SYSTEM V1.1 ]=======>------
 Programmers: 
 	lewd
 	SmartLion
@@ -8,10 +8,10 @@ Programmers:
 [HOW TO CONFIGURE]
 
 Set the MoTD:
-	Go to line 58, after Game.MOTD, change the string in the quotation marks (""). 
+	Go to line 54, after Game.MOTD, change the string in the quotation marks (""). 
 	
 Set the TEAM Names & Colour:
-	Go to line 64 for the defending team, line 65 for the hostile team. After going to
+	Go to line 60 for the defending team, line 61 for the hostile team. After going to
 	the respective line, go to the brackets after new Team & change the team name in the 
 	first string (again, in the quotation marks). If you want to change the color get the
 	corresponding hexadecimal color code for the team and paste it in the second string,
@@ -21,33 +21,28 @@ Set up the Terminal location:
 	!! IT IS ADVISED YOUR MAP EXISTS BEFOREHAND !! 
 	
 	Once you have got a location for your terminal in your .brk file in BRICK HILL WORKSHOP, get the terminal 
-	brick's location (a vector3) and paste it in the first Vector 3 in line 91.
+	brick's location (a vector3) and paste it in the first Vector 3 in line 88.
 
 Set up Group ID Fetching & Moderator Permissions Auto-granting: 
-	Go to line 100 then in await player.getRankInGroup() you will have to get your group's 
+	Go to line 99 then in await player.getRankInGroup() you will have to get your group's 
 	ID and paste it in the brackets. This will check if you are in the group on join and
 	if you are then it teams you over to defenders. If you  are not in the group, you will join
 	hostiles. 
 	
-	Set up the Mod Auto-granting by going to line 101 and changing the value of minimumModRank to be that of the lowest 
+	Set up the Mod Auto-granting by going to line 100 and changing the value of minimumModRank to be that of the lowest 
 	Rank ID that you wish to be granted Moderator Permissions in-game. 
 	
 Setting spawnpoints: 
 	!! IT IS ADVISED YOUR MAP EXISTS BEFOREHAND !! 
 
-	Because of an issue with spawnPosition due to how this is programmed, you will have to go to line 126 for defenders & go to line 129 for hostiles
+	Because of an issue with spawnPosition due to how this is programmed, you will have to go to line 135 for defenders & go to line 138 for hostiles
 	and change the player.setPosition(new Vector3(position)) to that of the spawn point you have set up in your .brk file in BRICK HILL WORKSHOP.
 
 [KNOWN BUGS]
 
-- Sometimes on startup, the moderators will not be automatically set; currently this requires just shutting down and booting up the server until it does
-  work. Sorry for the inconvenience!
-  
 - if a user was created on the day they gained ownership or obtianed the rank that shares the rankId as specified in minimumModRank, they will not be given 
   moderator permissions in game.
   
-- Timer will continue even after a team has won.
-
 */
 
 //---------------------------------------------------------------------------------------------------
@@ -55,7 +50,8 @@ Setting spawnpoints:
 //---------------------------------------------------------------------------------------------------
 
 Game.assignRandomTeam = false // this will make the teaming over work, do not set this to true or teams WILL break
-Game.MOTD = "Welcome To ATERMIS I" //MESSAGE OF THE DAY
+Game.setMaxListeners(50)
+Game.MOTD = "Welcome To ATERMIS I | Running ATERMIS CORE V1.1" //MESSAGE OF THE DAY
 
 //---------------------------------------------------------------------------------------------------
 // VARIABLES 
@@ -64,26 +60,27 @@ Game.MOTD = "Welcome To ATERMIS I" //MESSAGE OF THE DAY
 let defendersteam = new Team("Defenders","#0000ff") // ("First String", "Second String") 
 let hostilesteam = new Team("Hostiles","#ff0000")
 
-//---------------------------------------------------------------------------------------------------
-// TERMINAL & TIME RELATED
-//---------------------------------------------------------------------------------------------------
 let officialstatus = false 
 let teamholding = "none"
 let countdownactive = false 
 
 var counter = 0 
 var wincondition = 300 // This is the amount of time the players have to hold the terminal for - change this to configure the terminal
-var maximumtime = 1200 // T
-var maximumovertime = 600
+var maximumtime = 1200 // This is the maximum amount of time that can happen before overtime kicks in.
 var overtime = null 
+var slockedstate = null
+var hosteamholdingmessagesent = null 
+var defteamholdingmessagesent = null
+var notofficializedmessagesent = null 
 
 var defendersloop = ""
 var hostilesloop = ""
 
 //---------------------------------------------------------------------------------------------------
-// MODERATORS 
+// Arrays 
 //---------------------------------------------------------------------------------------------------
 var moderator = [335323] // This is an Array. To add Users by hand you will have to separate each UID with a comma.
+var slockmembers = []
 
 //---------------------------------------------------------------------------------------------------
 // OBJECT CREATION
@@ -94,14 +91,32 @@ Game.newBrick(termbrick)
 Game.newTeam(defendersteam)
 Game.newTeam(hostilesteam)
 
+//---------------------------------------------------------------------------------------------------
 // PLAYER JOIN
+//---------------------------------------------------------------------------------------------------
 
 Game.on("playerJoin", async(player) => {
 	const groupData = await player.getRankInGroup(3564) // change the value in the brackets to YOUR Group's ID
 	let minimumModRank = 39 // Change this value to the lowest rank in your group that has moderate group wall permissions - This will give the users permission to officialize raid servers, kick members & team over players.
 	console.log(groupData.rank)
+	
+	if (slockedstate == true) {
+		player.kick("Server is locked.")
+	}
+	
 	if (groupData) {
 		player.setTeam(defendersteam)
+		if (groupData.rank >= minimumModRank ){
+			if (moderator.includes(player.userId)) {
+				console.log("This user already has Moderator Status") 
+				console.log(moderator)
+				return
+			} else {
+				moderator.push(player.userId)
+				player.message("You are a Moderator! Type /commands [page] to list the commands!", 5)
+				console.log(moderator)
+			}
+		}	
 	} else {
 		player.setTeam(hostilesteam) 
 	}
@@ -109,13 +124,7 @@ Game.on("playerJoin", async(player) => {
 	player.on("initialSpawn", () => {
 		player.kill()
 		createBrick(player) 
-		
-		if (groupData.rank >= minimumModRank ){
-			moderator.push(player.userId)
-			console.log(moderator)
-			player.message("You are a Moderator! Type /cmds to list the commands!", 5)
-		}	
-		
+		player.kill()
 		if (officialstatus == false){
 			player.bottomPrint("Atermis || UNOFFICAL Raid ||", 10) 
 		}
@@ -130,6 +139,13 @@ Game.on("playerJoin", async(player) => {
 		}
 	})
 })
+
+//---------------------------------------------------------------------------------------------------
+
+function ATERMIS(message){
+	    return `[#ff0000][ATERMIS]: [#ffffff]${message}`
+		// based on CHEATS COMMANDS V2 - Thanks Cheats! 
+}
 
 //---------------------------------------------------------------------------------------------------
 // HITBOX - Thanks SmartLion!
@@ -228,12 +244,6 @@ tool.on("activated", (attacker) => {
     }
 })
 
-//---------------------------------------------------------------------------------------------------
-
-function ATERMIS(message){
-	    return `[#ff0000][ATERMIS]: [#ffffff]${message}`
-		// based on CHEATS COMMANDS V2 - Thanks Cheats! 
-}
 
 //---------------------------------------------------------------------------------------------------
 function playerexplode(player,color) {
@@ -286,31 +296,69 @@ Game.command("mod", (caller, args ) => {
 	if (caller.userId !== 6419) return player.message("You are not the owner.") 
 	for (let player of Game.players) {
 		if (player.username.startsWith(args)) {
-			moderator.push(player.userId)
-			console.log(moderator)
-			player.centerPrint("You are now a Moderator", 5) 
-		}
+			if (moderator.includes(player.userId)) {
+				caller.message("This user already has Moderator Status") 
+				return
+			} else {
+				moderator.push(player.userId)
+				player.message("You are a Moderator! Type /commands [page] to list the commands!", 5)
+			}
+		} 
 	}
 }) 
 
+Game.command("slock", (caller, args ) => {
+    if (moderator.includes(caller.userId)){
+		for (let player of Game.players) {
+			slockmembers.push(player.userId)
+			Game.centerPrintAll("Server has been LOCKED.",5) 
+			slockedstate = true
+			console.log(slockmembers)
+		}
+	}
+})
+
+Game.command("unslock", (caller, args ) => {
+    if (moderator.includes(caller.userId)){
+		for (let player of Game.players) {
+			slockmembers.length = 0
+			Game.centerPrintAll("Server has been UNLOCKED.",5) 
+			slockedstate = false
+			console.log(slockmembers)
+		}
+	}
+})
+			
 Game.command("kick", (caller, args ) => {
     if (moderator.includes(caller.userId)){
 	    for (let player of Game.players) {
-        if (player.username.startsWith(args)) {
-			player.kick("Kicked by a Defense Leader")
-            }
-        }
-    }
+			if (player.username.startsWith(args)) {
+				if (moderator.includes(player.userId)) {
+					caller.message("Cannot kick other Moderators")
+				} else {
+					Game.messageAll("[ " + `${player.username}` +  " ]"  + " Has been kicked by " + "[ " + `${caller.username}` + " ]") 
+					player.kick("Kicked by Moderator:" `${caller.username}`)
+				}
+			}
+		}
+	}
 })
 
-Game.command("cmds", (caller, args ) => {
+Game.command("commands", (caller, args ) => {
     if (moderator.includes(caller.userId)){
-		caller.message(ATERMIS("| /def [username] - teams player to defenders |"))
-		caller.message(ATERMIS("| /hos [username] - teams player to hostiles |"))
-		caller.message(ATERMIS("| /kick [username] - kicks player from game |"))
-		caller.message(ATERMIS("| /message [message] - sends global message |"))
-		caller.message(ATERMIS("| /official - Officialises the Raid |"))
-		caller.message(ATERMIS("| /cmds - messages a list of the commands. |"))
+		if (args == 1) {
+			caller.message(ATERMIS("| /def [username] - teams player to defenders |"))
+			caller.message(ATERMIS("| /hos [username] - teams player to hostiles |"))
+			caller.message(ATERMIS("| /kick [username] - kicks player from game |"))
+			caller.message(ATERMIS("| /m [message] - sends global message |"))
+			caller.message(ATERMIS("| /official - Officialises the Raid |"))
+			caller.message(ATERMIS("| /commands [page] - messages a list of the commands. |"))
+		}
+		if (args == 2) {
+			caller.message(ATERMIS("| /slock - locks the server and prevents player joining. |"))
+			caller.message(ATERMIS("| /unslock - unlocks the server and allows player joining. |"))
+			caller.message(ATERMIS("| END | "))
+		}
 	}
 })
 
@@ -318,29 +366,39 @@ Game.command("def", (caller, args ) => {
     if (moderator.includes(caller.userId)) {
 		for (let player of Game.players) {
 			if (player.username.startsWith(args)) {
-					player.setTeam(defendersteam)
-					player.message("You have been teamed to Defenders.")
-				}
+				player.setTeam(defendersteam)
+				Game.messageAll("[ " + `${player.username}` +  " ]"  + " Has been teamed to Defenders by " + "[ " + `${caller.username}` + " ]") 
 			}
 		}
-	})
+	}
+})
     
 Game.command("hos", (caller, args ) => {
     if (moderator.includes(caller.userId)){
 		for (let player of Game.players) {
 			if (player.username.startsWith(args)) {
 				player.setTeam(hostilesteam)
-				player.message("You have been teamed to Hostiles.") 
+				Game.messageAll("[ " + `${player.username}` +  " ]"  + " Has been teamed to Hostiles by " + "[ " + `${caller.username}` + " ]") 
 			}
         }
 	}
  })
 
-Game.command("message", (caller, args ) => {
+Game.command("m", (caller, args ) => {
     if (moderator.includes(caller.userId)){
-	Game.centerPrintAll(args, 5)
+	Game.centerPrintAll("[ " + args + " ]" + " Sent By " + "[ " + `${caller.username}` + " ]", 10)
 	}
 })
+
+Game.command("kill", (caller, args ) => {
+    if (moderator.includes(caller.userId)){
+		for (let player of Game.players) {
+			if (player.username.startsWith(args)) {
+				player.kill()
+			}
+        }
+	}
+ })
 	
 Game.command("official", (caller, args ) => {
     if (moderator.includes(caller.userId)){
@@ -356,28 +414,33 @@ Game.command("official", (caller, args ) => {
 			console.log(t)
 			Game.bottomPrintAll("ATERMIS || OFFICIAL Raid || " + `${t}`) // number to string
 			overtime = false 
+			console.log(overtime)
 			if (t == 0) { // stop loop
 				clearInterval(timeloop) 
 				Game.centerPrintAll("OVERTIME", 5) 
 				overtime = true
+				console.log(overtime) 
+				if (overtime == true) {
+					console.log(overtime)
+					var ot = 0
+					var overtimeloop = setInterval(()=> {
+						ot++
+						console.log(ot)
+						Game.bottomPrintAll("ATERMIS || OFFICIAL Raid || OVERTIME " + `${ot}`)
+						if (ot >= 600) {
+							clearInterval(overtimeloop)
+							ot = 0
+						}
+					},1000)
+				}
 			}
 		}, 1000);
 		officialstatus = true
-		if (overtime == true) {
-			var ot = 0
-			var overtimeloop = setInterval(()=> {
-				ot++
-				console.log(ot)
-				Game.bottomPrintAll("ATERMIS || OFFICIAL Raid || OVERTIME " + `${ot}`)
-				if (ot == maximumovertime) {
-					clearInterval(overtimeloop)
-				}
-			},1000)
-		}
+
 		if (raidended == true) {
 			clearInterval(timeloop)
 			clearInterval(overtimeloop)
-			t = 1200 
+			t = maximumtime 
 			ot = 0
 		}
 	}
@@ -389,9 +452,13 @@ Game.command("official", (caller, args ) => {
 
 termbrick.touching((async(player) => {
 	if (officialstatus == false) {
-		setTimeout(() => {player.message("The server is not officialized!");}, 10000)
-		return
+		if (notofficializedmessagesent !== true) {
+			player.message("The server is not officialized!")
+			notofficializedmessagesent = true
+			console.log(notofficializedmessagesent)
+		} else {return}
 	}
+	
 	if (officialstatus == true) {
 		if (player.team == defendersteam) {
 			if (countdownactive == true) {
@@ -399,12 +466,19 @@ termbrick.touching((async(player) => {
 					clearInterval(defendersloop)
 					counter = 0
 					countdownactive = false
+					defteamholdingmessagesent = false
 					if (overtime == true) {
 						Game.centerPrintAll("Defenders have recaptured the terminal during OVERTIME! DEFENDER VICTORY!", 9999) 
+						clearInterval(overtimeloop)
+						raidended = true
 					}
 				}		
 				if (teamholding == "Defenders") {
-					setTimeout(() => {player.message("Your team already owns Terminal!");}, 10000)
+					if (defteamholdingmessagesent !== true) { 
+						player.message("Your team already owns Terminal!")
+						defteamholdingmessagesent = true
+						console.log(defteamholdingmessagesent)
+					} else {return}
 					return 
 				}		
 			}
@@ -429,16 +503,21 @@ termbrick.touching((async(player) => {
 				}, 1000);
 			}
 		}
-		// IF THE PLAYER IS IN THE HOSTILE TEAM 
+		
 		if (player.team == hostilesteam) {
 			if (countdownactive == true) {
 				if (teamholding == "Defenders") {
 					clearInterval(defendersloop)
 					counter = 0
 					countdownactive = false
+					hosteamholdingmessagesent = false 
 				}
 				if (teamholding == "Hostiles") {
-					setTimeout(() => {player.message("Your team already owns Terminal!");}, 10000)
+					if (hosteamholdingmessagesent !== true) {
+						player.message("Your team already owns Terminal!")
+						hosteamholdingmessagesent = true
+						console.log(hosteamholdingmessagesent)
+					} else {return}
 					return 
 				}
 			}
