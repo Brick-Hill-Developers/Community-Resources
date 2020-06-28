@@ -7,8 +7,8 @@
   - [Crimson Blaster](Weaponry/CrimsonBlaster.js) By SmartLion
   - [Simple Firegun Script](Weaponry/Simple_Gun.js) by Phoenix
 - General Game
-  - [Calendar & Player leveling](General Game Scripts/Calendar.js)
-  - [Chat Tags](General Game Scripts/Features/Chat Tags.js) By ggnoobgaming
+  - [Calendar & Player leveling](General%20Game%20Scripts/Calendar.js)
+  - [Chat Tags](General%20Game%20Scripts/Features/Chat%20Tags.js) By ggnoobgaming
   - [Anti Team Kill](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/%5BWIP%5D%20Anti-Team%20Kill.js) By Phoenix
   - [Owner Team](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/OwnerTeam.js) By SmartLion
   - [BBTools](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/BBTools.js) By SmartLion and Cheats (Partial Source code)
