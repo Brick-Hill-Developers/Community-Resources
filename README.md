@@ -31,8 +31,8 @@
   - [Chat Tags](General%20Game%20Scripts/Features/Chat%20Tags.js) by ggnoobgaming
 
 #### Others.
-- [Calendar & Level for RP.](General%20Game%20Scripts/Calendar.js) by ggnoobgaming
-- [Infinite Jump](General%20Game%20Scripts/InfiniteJump.js) by ggnoobgaming
+- [Calender & Time Based Leveling System for Roleplays](General%20Game%20Scripts/Calendar.js) by ggnoobgaming
+- [Infinite Jump](General%20Game%20Scripts/InfiniteJump.js) by Enderspearl184 
 
 
 ## Templates
@@ -52,12 +52,13 @@
 
 - phoenix (3 Contributions)
 - SmartLion (7 Contributions)
-- ggnoobgaming (5 Contributions + Donations)
+- ggnoobgaming (4 Contributions + Donations)
 - Lewd (1 Contribution)
 - lykaspars4 (3 Contributions)
 - Spotwich (2 Contributions)
 - Rares (1 Contribution)
 - Cheats (for helpng SmartLion)
+- Enderspearl184 (1 Contribution)
 ------
 
 ## Consider Donating by clicking the "Sponsor" button. (Brick-hill Donation, dont worry!
