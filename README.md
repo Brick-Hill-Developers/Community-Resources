@@ -2,7 +2,7 @@
 
 # Community Contributions.
 #### Special Scripts:
-- [Artmesis Core](General%20Game%20Scripts/Administration%20Tools/Atermis.js) By Lewd
+- [Atermis Core](General%20Game%20Scripts/Administration%20Tools/Atermis.js) By Lewd
 
 #### Administration Tools:
 - [AntiAFK](General%20Game%20Scripts/Administration%20Tools/AntiAFK.js) by lykaspars4
