@@ -45,7 +45,8 @@
 *Undocumented Means it needs to be installed in a special way the developer didnt mention. Once we know how the installation works it will be fully released.
 ## Tutorials:
 - [Chat Tags Tutorial](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/Chat%20Tags%20Tutorial.md) by ggnoobgaming
-- [Discord.js Tutorial](https://github.com/Brick-Hill-Developers/Community-Resources/blob/85e39833b360ceaa7a1327e3a78786f2264e0fbf/General%20Game%20Scripts/Discord.md) by Spotwich
+- [Discord.js Tutorial](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/Tutorials/Discord.md) by Spotwich
+- [Cakedar
 
 ---
 # Special thanks to:
