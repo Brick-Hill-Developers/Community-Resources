@@ -9,7 +9,7 @@
 -  [Chat to Discord.js](General%20Game%20Scripts/Administration%20Tools/Discord.js) by Spotwich
 - [Owner Team](General%20Game%20Scripts/Administration%20Tools/Discord.js) By SmartLion
 - [BBtools](General%20Game%20Scripts/Administration%20Tools/BBTools.js) By SmartLion and Cheats (Partial Source code)
--  [SwitchTeam](General%20Game%20Scripts/Administration%20Tools/TeamChangeScript.js) By Rares and ggnoobgaming (Partial help)
+-  [SwitchTeam](General%20Game%20Scripts/Administration%20Tools/TeamChangeScript.js) By Rares and ggnoobgamingdeutsch (Partial help)
 
 
 
@@ -30,10 +30,10 @@
 
 #### Gamepasses & Special Features:
   - [Member Features.js](General%20Game%20Scripts/Features/Gamepass.js) by pb2007
-  - [Chat Tags](General%20Game%20Scripts/Features/Chat%20Tags.js) by ggnoobgaming
+  - [Chat Tags](General%20Game%20Scripts/Features/Chat%20Tags.js) by ggnoobgamingdeutsch
 
 #### Others.
-- [Calender & Time Based Leveling System for Roleplays](General%20Game%20Scripts/Calendar.js) by ggnoobgaming
+- [Calender & Time Based Leveling System for Roleplays](General%20Game%20Scripts/Calendar.js) by ggnoobgamingdeutsch
 - [Infinite Jump](General%20Game%20Scripts/InfiniteJump.js) by Enderspearl184 
 
 
@@ -45,7 +45,7 @@
 *Undocumented Means it needs to be installed in a special way the developer didnt mention. Once we know how the installation works it will be fully released.
 
 ## Tutorials:
-- [Chat Tags Tutorial](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/Chat%20Tags%20Tutorial.md) by ggnoobgaming
+- [Chat Tags Tutorial](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/Chat%20Tags%20Tutorial.md) by ggnoobgamingdeutsch
 - [Discord.js Tutorial](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/Tutorials/Discord.md) by Spotwich
 - [Cakedar
 
@@ -54,7 +54,7 @@
 
 - phoenix (3 Contributions)
 - SmartLion (7 Contributions)
-- ggnoobgaming (4 Contributions + Donations)
+- ggnoobgamingdeutsch (4 Contributions + Donations)
 - Lewd (1 Contribution)
 - lykaspars4 (3 Contributions)
 - Spotwich (2 Contributions)
