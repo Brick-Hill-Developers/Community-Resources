@@ -18,8 +18,10 @@
 - [Simple Firegun](Weaponry/Simple_Gun.js) by Phoenix
 - [Crimson Blaster](Weaponry/CrimsonBlaster.js) By SmartLion
 - [Anti TeamKill Weapon](Weaponry/Anti%20TK%20Gun.js) By Phoenix
+
 #### Ambient:
 - [Day and Night Cycle](General%20Game%20Scripts/Ambient/DayNight%20Cycle.js)
+
 #### Game Optimization:
 - [reuseHandler](General%20Game%20Scripts/Optimizations/ReUseHandler.js) by SmartLion
 - [Brick-Stream (ONLY Node-hill 7.9.5!) ](General%20Game%20Scripts/Optimizations/Stream.js) By SmartLion
@@ -36,13 +38,12 @@
 
 
 ## Templates
-
-
 - [Sword Fighting Template](https://github.com/Brick-Hill-Developers/Sword-Fighting-Arena) By Phoenix
 - [Murder Mystery Template (Undocumented)](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/Templates/Murder%20Mystery.js) by lykaspars4
 - [Clicker Game Template](https://github.com/Core-commits/Click_Template) by Edge.
 - [R/place Template (Undocumented)](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/Templates/Place.js) by lykaspars4
 *Undocumented Means it needs to be installed in a special way the developer didnt mention. Once we know how the installation works it will be fully released.
+
 ## Tutorials:
 - [Chat Tags Tutorial](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/Chat%20Tags%20Tutorial.md) by ggnoobgaming
 - [Discord.js Tutorial](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/Tutorials/Discord.md) by Spotwich
