@@ -5,7 +5,7 @@
 
 Less special people:
 
-Rares, bought Tier I and II :heart:
+Rares, bought Tier I and II :heart:\n 
 ggnoobgamingdutch, bought Tier I :heart:
 
 
