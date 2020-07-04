@@ -1,6 +1,12 @@
 ## Consider Donating by clicking the "Sponsor" button. (Brick-hill Donation, dont worry!
 :heart: Top Donator!!!! :heart:
-**RARES** Who bought Tier I, II and V!!! TYSM!
+
+**Classified Slamander** Who bought Tier I, II and V!!! TYSM!
+
+Less special people:
+
+Rares, bought Tier I and II :heart:
+ggnoobgamingdutch, bought Tier I :heart:
 
 
 # Community Contributions.
