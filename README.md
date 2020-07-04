@@ -1,3 +1,6 @@
+## Consider Donating by clicking the "Sponsor" button. (Brick-hill Donation, dont worry!
+:heart: Top Donator!!!! :heart:
+**RARES** Who bought Tier I, II and V!!! TYSM!
 
 
 # Community Contributions.
@@ -64,6 +67,4 @@
 
 ------
 
-## Consider Donating by clicking the "Sponsor" button. (Brick-hill Donation, dont worry!
-:heart:
 
