@@ -60,7 +60,7 @@ ggnoobgamingdutch, bought Tier I :heart:
 ## Tutorials:
 - [Chat Tags Tutorial](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/General%20Game%20Scripts/Chat%20Tags%20Tutorial.md) by ggnoobgamingdeutsch
 - [Discord.js Tutorial](https://github.com/Brick-Hill-Developers/Community-Resources/blob/master/Tutorials/Discord.md) by Spotwich
-- [Cakedar
+
 
 ---
 # Special thanks to:
