@@ -11,8 +11,10 @@ ggnoobgamingdutch, bought Tier I :heart:
 
 
 # Community Contributions.
-#### Special Scripts:
+#### Other Stuff:
 - [Atermis Core](General%20Game%20Scripts/Administration%20Tools/Atermis.js) By Lewd
+- [Brickster (API Wrapper)](https://github.com/DeweyStuff/brickster) By Deweystuff 
+- [PyBrick (API Wrapper)](https://github.com/Choco-Organisation/PyBrick) by Edge.
 
 #### Administration Tools:
 - [AntiAFK](General%20Game%20Scripts/Administration%20Tools/AntiAFK.js) by lykaspars4
