@@ -6,7 +6,7 @@ Game.on("playerJoin", (p) => {
 })
 
 Game.command("ipban", (p,m) => {
-    if (p.userId!==YOURUSERID && !Game.local) return
+    if (p.userId!==YOURUSERID && !Game.local) return// Change YOURUSERID with your user id.
     const v = getPlayer(m);
     if (!v) return;
 	
@@ -20,7 +20,7 @@ Game.command("ipban", (p,m) => {
 })
 
 Game.command("unipban", (p,ip) => {
-	if (p.userId!==305122 && !Game.local) return
+	if (p.userId!==USERID && !Game.local) return //Change USERID with your respective id.
 	if (IPBANS.includes(ip)) {
 		IPBANS.splice(IPBANS.indexOf(ip), 1)
 		console.log
