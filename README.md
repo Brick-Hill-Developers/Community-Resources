@@ -71,9 +71,10 @@ ggnoobgamingdutch, bought Tier I :heart:
 - Lewd (1 Contribution)
 - lykaspars4 (3 Contributions)
 - Spotwich (2 Contributions)
+- Enderspearl184 (2 Contribution)
 - Rares (1 Contribution)
 - Cheats (for helpng SmartLion)
-- Enderspearl184 (1 Contribution)
+
 
 ------
 
