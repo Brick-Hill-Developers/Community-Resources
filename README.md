@@ -22,6 +22,7 @@ ggnoobgamingdutch, bought Tier I :heart:
 - [Owner Team](General%20Game%20Scripts/Administration%20Tools/Discord.js) By SmartLion
 - [BBtools](General%20Game%20Scripts/Administration%20Tools/BBTools.js) By SmartLion and Cheats (Partial Source code)
 -  [SwitchTeam](General%20Game%20Scripts/Administration%20Tools/TeamChangeScript.js) By Rares and ggnoobgamingdeutsch (Partial help)
+- [IpBan](General%20Game%20Scripts/Administration%20Tools/ipBan.js) By Enderspearl184
 
 
 
