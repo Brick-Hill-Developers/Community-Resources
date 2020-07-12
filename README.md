@@ -49,6 +49,7 @@ ggnoobgamingdutch, bought Tier I :heart:
 #### Others.
 - [Calender & Time Based Leveling System for Roleplays](General%20Game%20Scripts/Calendar.js) by ggnoobgamingdeutsch
 - [Infinite Jump](General%20Game%20Scripts/InfiniteJump.js) by Enderspearl184 
+- [Countdown](https://gist.github.com/Core-commits/e39fcf0538c79dbd68f07c9b887e133a) by Edge.
 
 
 ## Templates
