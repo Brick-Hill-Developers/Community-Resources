@@ -39,7 +39,7 @@ ggnoobgamingdutch, bought Tier I :heart:
 #### Game Optimization:
 - [reuseHandler](General%20Game%20Scripts/Optimizations/ReUseHandler.js) by SmartLion
 - [Brick-Stream (ONLY Node-hill 7.9.5!) ](General%20Game%20Scripts/Optimizations/Stream.js) By SmartLion
-- [LoadBrk](https://github.com/BunnyNabbit/loadbrk/blob/master/loadbrk.js) by SmartLion
+- [LoadBrk](https://github.com/BunnyNabbit/loadbrk/blob/master/loadbrk.js) by SmartLion and pb2007
 
 
 #### Gamepasses & Special Features:
