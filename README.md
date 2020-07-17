@@ -43,7 +43,7 @@ ggnoobgamingdutch, bought Tier I :heart:
 
 
 #### Gamepasses & Special Features:
-  - [Member Features.js](General%20Game%20Scripts/Features/Gamepass.js) by pb2007
+  - [Member Features.js](General%20Game%20Scripts/Features/memberfeatures.js) by pb2007
   - [Chat Tags](General%20Game%20Scripts/Features/Chat%20Tags.js) by ggnoobgamingdeutsch
 
 #### Others.
