@@ -7,7 +7,7 @@ Less special people:
 
 Rares, bought Tier I and II :heart:
 
-ggnoobgamingdutch, bought Tier I :heart:
+ggnoobgamingdeutsch, bought Tier I :heart:
 
 
 # Community Contributions.
