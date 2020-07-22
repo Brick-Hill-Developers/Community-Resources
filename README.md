@@ -19,11 +19,14 @@ ggnoobgamingdeutsch, bought Tier I :heart:
 #### Administration Tools:
 - [AntiAFK](General%20Game%20Scripts/Administration%20Tools/AntiAFK.js) by lykaspars4
 -  [Chat to Discord.js](General%20Game%20Scripts/Administration%20Tools/Discord.js) by Spotwich
-- [Owner Team](General%20Game%20Scripts/Administration%20Tools/Discord.js) By SmartLion
+-  [DiscordV2.js](General%20Game%20Scripts/Administration%20Tools/Discord.js) by pb2007
+- [Owner Team](General%20Game%20Scripts/Administration%20Tools/DiscordV2.js) By SmartLion
 - [BBtools](General%20Game%20Scripts/Administration%20Tools/BBTools.js) By SmartLion and Cheats (Partial Source code)
 -  [SwitchTeam](General%20Game%20Scripts/Administration%20Tools/TeamChangeScript.js) By Rares and ggnoobgamingdeutsch (Partial help)
 - [IpBan](General%20Game%20Scripts/Administration%20Tools/ipBan.js) By Enderspearl184
 - [UserInfoModule](General%20Game%20Scripts/Administration%20Tools/UserInfoModule.js) By Enderspear1184
+- [MapChanger](General%20Game%20Scripts/Administration%20Tools/MapChanger.js) By Dragonian (Original Concept from Edged)
+- [ServerLine](General%20Game%20Scripts/Administration%20Tools/Serverline.js) By Dragonian
 
 
 
@@ -77,6 +80,7 @@ ggnoobgamingdeutsch, bought Tier I :heart:
 - Rares (1 Contribution)
 - Cheats (for helpng SmartLion)
 
+^^ this is discontinued 
 
 ------
 
