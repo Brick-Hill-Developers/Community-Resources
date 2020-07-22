@@ -19,7 +19,7 @@ ggnoobgamingdeutsch, bought Tier I :heart:
 #### Administration Tools:
 - [AntiAFK](General%20Game%20Scripts/Administration%20Tools/AntiAFK.js) by lykaspars4
 -  [Chat to Discord.js](General%20Game%20Scripts/Administration%20Tools/Discord.js) by Spotwich
--  [DiscordV2.js](General%20Game%20Scripts/Administration%20Tools/Discord.js) by pb2007
+-  [Discord-Chat.js](General%20Game%20Scripts/Administration%20Tools/Discord.js) by pb2007
 - [Owner Team](General%20Game%20Scripts/Administration%20Tools/discord-chat.js) By SmartLion
 - [BBtools](General%20Game%20Scripts/Administration%20Tools/BBTools.js) By SmartLion and Cheats (Partial Source code)
 -  [SwitchTeam](General%20Game%20Scripts/Administration%20Tools/TeamChangeScript.js) By Rares and ggnoobgamingdeutsch (Partial help)
