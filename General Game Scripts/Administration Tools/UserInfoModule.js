@@ -8,7 +8,7 @@
 //UserInfo.GetCrate(player, filter) - get the user's crate. Valid filters are: all (hats, tools, faces, heads, figures), hat, tool, face, head, tshirt, shirt, pants, special, figure, or everything (to get their entire crate)
 //UserInfo.GetForumPosts(player) - get the user's forum post count
 
-const phin = require('phin')
+const phin = getModule('phin')
 const sortMethods=["all", "hat", "tool", "face", "head", "tshirt", "shirt", "pants", "special", "figure"]
 const uniqueSorts=["all", "tshirt", "shirt", "pants"]
 
