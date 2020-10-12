@@ -1,3 +1,4 @@
+const Discord = getModule('discord.js');
 const bot = new Discord.Client({disableEveryone: false});
 bot.login("place here"); //Bot Token
 var c = 'place here'; //chennel ID
