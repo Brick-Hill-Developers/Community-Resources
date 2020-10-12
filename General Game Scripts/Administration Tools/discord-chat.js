@@ -3,12 +3,13 @@
 // This script requires discord.js to be installed and be in the sandbox. (npm i discord.js@latest)
 // This script requires process to be in the sandbox for shutdown notifications
 
-// sandbox: {
-//     Discord: require("discord.js"),
-//     process: require("process")
-// }
+// modules: [ "discord.js", "process"]
+// 
 
 // Settings \\
+
+const Discord = getModule('discord.js');
+const process = getModule('process');
 const gamename = ""      // The name of your game.
 
 const guildid = ""       // The ID of your server (called guilds internally). Used for nicknames and such
