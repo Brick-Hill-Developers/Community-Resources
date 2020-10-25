@@ -1,5 +1,3 @@
-const {rgbToHex} = require("node-hill/dist/util/color/color");
-
 const dc = {};
 
 dc.time = 0;
