@@ -1,5 +1,5 @@
 async function Countdown(sec, p){
-    let VAR = 10
+    let VAR = sec
         
         for (let i = 0; i < VAR; i++) {
             player.topPrint(`Game starts in ${VAR - i} seconds.`)
