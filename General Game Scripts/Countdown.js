@@ -1,12 +1,10 @@
 async function Countdown(sec, p){
-    let VAR = sec
+    let countDown = sec;
         
-        for (let i = 0; i < VAR; i++) {
-            player.topPrint(`Game starts in ${VAR - i} seconds.`)
-            console.log(VAR)
-            console.log(i)
+        for (let i = 0; i < countDown; i++) {
+            player.topPrint(`Game starts in ${countDown - i} seconds.`)
             await sleep(1000)
-            if (i == 9) {
+            if (i == p) {
                 player.centerPrint("Game has started", 2)
             }
 }
