@@ -9,9 +9,9 @@ npm i discord.js
 
 Edit your sandbox so it looks like this:
 ```js
-sandbox: {
-	Discord: require("discord.js");
-},
+modules: [
+	'discord.js'
+]
 ```
 
 Go to https://discordapp.com/developers/applications
@@ -24,7 +24,11 @@ Finally. Put the bot token in  the script as it says:
 
 Enable developer mode in apperance settings. 
 
-Select the channel you want the bot to send messages and copy the id. Put this id in:
+And that should be it, but before continuing on writing your script you'll need DiscordJS imported on your files.
+
+It's as easy as:
 ```js
-var c = `channel id here`
+const discordJS = getModule('discord.js');
+
+// rest of your discord bot interactivity here!
 ```
