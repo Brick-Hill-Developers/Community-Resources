@@ -12,6 +12,9 @@ For Complex scripts that require setups, such as discord.js or admin commands.
 
 Add, fix or suggest any change on the community resources, it's open to you!
 
+### 👨‍💻 Now supporting Brick-Hosting.tk!
+Brick-Hosting.tk has gained a lot of popularity, and thus we are now making specialized scripts for this hosting solution! 
+
 ### 🌐 Social
 
 Join our discord servers!
