@@ -1,15 +1,15 @@
 //loadbrk.js, created by bunnynabbit (aka SmartLion on Brick Hill) and pb2007 (Podnf)
 
 // Settings \\
-sets = ["blocky","brkcanyon","house","house2","tower"] // Files to be loaded by the auto selector (ignored if flat-file-db already exists)
-ownerAdminId = 1 // user id goes here (you can find this by looking at the number at the end of the url of your profile page)
-countdownDefault = 600 // autoload time in seconds (default is 600 seconds, so an autoload happens every 10 minutes)
-guiEnable = true
-flatfiledbEnabled = false // (npm i flat-file-db) Uses flat-file-db to save sets added from /add and ports existing data from the sets array. If database already exists then the above hardcoded array wont be used
-consoleOutput = true // if false, there will be no messages in the server console
+const sets = ["blocky","brkcanyon","house","house2","tower"] // Files to be loaded by the auto selector (ignored if flat-file-db already exists)
+const ownerAdminId = 1 // user id goes here (you can find this by looking at the number at the end of the url of your profile page)
+const countdownDefault = 600 // autoload time in seconds (default is 600 seconds, so an autoload happens every 10 minutes)
+const guiEnable = true
+const flatfiledbEnabled = false // (npm i flat-file-db) Uses flat-file-db to save sets added from /add and ports existing data from the sets array. If database already exists then the above hardcoded array wont be used
+const consoleOutput = true // if false, there will be no messages in the server console
 // Settings \\
 
-countdown = countdownDefault
+let countdown = countdownDefault
 if (flatfiledbEnabled == true) { 
 flatfile = require('flat-file-db');
 db = flatfile('/tmp/loadbrkdata.db'); // This will create a folder called tmp at current drive
@@ -237,23 +237,23 @@ Game.on('playerJoin', (p) => {
 function bubbleexplode(px,py,pz,color) {
     let brick = new Brick(new Vector3(px,py,pz+3),new Vector3(0.35,0.35,0.35),color)
     Game.newBrick(brick)
-    var grav = 1
-    var time = 0
-    var sped = 1
-    var prot = randynumber(0,9999)
+    const grav = 1
+    const time = 0
+    const sped = 1
+    const prot = randynumber(0,9999)
     brick.setInterval(() => {
-        var rotx = brick.position.x += 1 * Math.sin(prot)
-        var roty = brick.position.y -+ 1 * Math.cos(prot)
-        var rotz = brick.position.z += grav
+        let rotx = brick.position.x += 1 * Math.sin(prot)
+        let roty = brick.position.y -+ 1 * Math.cos(prot)
+        let rotz = brick.position.z += grav
         brick.setPosition(new Vector3(rotx,roty,rotz))
         time++
         if (time > 1) {
             grav -= 0.1
             sped -= 0.05
             time++
-            var rotx = brick.position.x += sped * Math.sin(prot)
-            var roty = brick.position.y -+ sped * Math.cos(prot)
-            var rotz = brick.position.z += grav
+            rotx = brick.position.x += sped * Math.sin(prot)
+            roty = brick.position.y -+ sped * Math.cos(prot)
+            rotz = brick.position.z += grav
             if (time > 80 && !brick.destroyed)
             brick.destroy()
         }
