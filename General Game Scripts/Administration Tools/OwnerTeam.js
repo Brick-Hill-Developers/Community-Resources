@@ -1,23 +1,24 @@
 Game.assignRandomTeam = false // so teams arent assigned to random people
-var teamAlreadyMade = false
-var ownerTeam = new Team("Owner","00ccff")
-var playerTeam = new Team("Players","ffffff")
-Game.newTeam(playerTeam)
+let teamAlreadyMade = false
+let ownerTeam = new Team("Owner", "00ccff");
+let playerTeam = new Team("Players", "ffffff");
+
+const ownerId = 0; // YOUR ID HERE!
+
+Game.newTeam(playerTeam);
+Game.newTeam(ownerTeam);
 
 Game.on("playerJoin", (player) => {
+
     player.on("initialSpawn", () => {
-        if (player.username === "Your Username") {
+        if (player.id === ownerId) {
             checkTeamAlreadyMade()
-            player.setTeam(ownerTeam)
-        } else {
-            player.setTeam(playerTeam)
+            player.setTeam(ownerTeam);
+            return;
         }
+
+        player.setTeam(playerTeam)
+
     })
 })
 
-function checkTeamAlreadyMade() {
-    if (teamAlreadyMade == false) {
-        Game.newTeam(ownerTeam)
-        teamAlreadyMade = true
-    }
-}

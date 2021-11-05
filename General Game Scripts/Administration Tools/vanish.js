@@ -1,3 +1,9 @@
+/**
+ * Author: 
+ * Description: Vanish command for node-hill. Makes you vanish from the game for other players.
+ * Modules: none
+ */
+
 Game.command("vanish", (player) => {
     // Make the player disappear
     player._removePlayer()

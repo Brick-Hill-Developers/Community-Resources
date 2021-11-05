@@ -1,3 +1,7 @@
+/**
+ * @deprecated Serverline is deprecated at the moment.
+ */
+
 serverline.init()
 
 serverline.setPrompt('> ')
