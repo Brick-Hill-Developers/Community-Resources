@@ -1,3 +1,8 @@
+/**
+ * 
+ * @deprecated This is deprecated.
+ */
+
 let position = new Vector3(0,0,0)
 let scale = new Vector3(1,1,1)
 
