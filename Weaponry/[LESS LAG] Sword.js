@@ -55,18 +55,18 @@ tool.on("activated", (attacker) => {
     }
 })
 
-function playerexplode(player,color) {
-    let brick = new Brick(player.position,particleSize,color)
+function playerexplode(player, color) {
+    let brick = new Brick(player.position, particleSize, color)
     Game.newBrick(brick)
-    var grav = 0.8
-    var time = 0
-    var prot = randomIntFromInterval(0,9999)
+    let grav = 0.8
+    let time = 0
+    let prot = randomIntFromInterval(0, 9999)
     brick.setInterval(() => {
-        var rotx = brick.position.x += 1 * Math.sin(prot)
-        var roty = brick.position.y - 1 * Math.cos(prot)
-        var rotz = brick.position.z += grav
+        let rotx = brick.position.x += 1 * Math.sin(prot)
+        let roty = brick.position.y - 1 * Math.cos(prot)
+        let rotz = brick.position.z += grav
         grav -= 0.1
-        brick.setPosition(new Vector3(rotx,roty,rotz))
+        brick.setPosition(new Vector3(rotx, roty, rotz))
         time++
         if (time > 80 && !brick.destroyed) {
             brick.destroy()
